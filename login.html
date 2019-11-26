@@ -1,0 +1,85 @@
+<html>
+
+<head>
+    <style>
+            .form {
+            color: black;
+            background-color: white;
+            display: block;
+            font-size: 20px;
+            font-family: times new roman, serif;
+            text-align: center;
+            margin: 0 auto;
+            width: 400px;
+            box-shadow: 2px 2px 5px black;
+            border: 2px solid white;
+        }
+        
+        .button {
+            background-color: green;
+            color: white;
+            font-size: 20px;
+            padding: 10px 24px;
+            text-decoration: none;
+            border-radius: 15px;
+            border: 2px solid green;
+        }
+        
+        .button:hover {
+            background-color: yellowgreen;
+            box-shadow: 2px 2px 5px black;
+            translate: y(4px);
+        }
+        
+        .button:active {
+            background-color: green;
+            box-shadow: 2px 2px 5px black;
+            translate: Y(4px);
+        }
+        
+        .button:disable {
+            background-color: red;
+        }
+        
+        .input {
+            background-color: white;
+            font-size: 12px;
+            padding: 10px 24px;
+            border-radius: 12px;
+            border: 1px solid blue;
+            color: blue;
+    </style>
+</head>
+<div class="form">
+    <h1>
+        <p Style="color:#ffa500; font-weight:700; font-size:40px;">
+            &#x1F465;<span style="color:blue;">TEAM</span><span style="color:red; font-size:40px;">WORK</span></p>
+
+    </h1>
+    <p> Login to access your profile</p><br/>
+    <form>
+
+
+
+        <input class="input" type="text" id="userInput" placeholder="Username" oninput="Go" Style="background-color:white; color:black; font-size:25px;"> </input>
+        </p>
+
+        <input class="input" type="password" placeholder="Password" oninput="see" Style="background-color:white;font-size:25px;"></input><br/><br/></p>
+
+        <input class="button" type="submit" value="Login" Style="color:white;height:50px; width:300px; font-size:20px;" id="submitBTN" onclick="welcomeUser()"> </input>
+        <script>
+            function welcomeUser() {
+                const userInput =
+                    document.getElementById('userInput')
+                const submitBTN =
+                    document.getElementById('submitBTN')
+                submitBTN.addEventListener('click',
+                    alert(`Welcome ${userInput.value}`))
+            }
+        </script>
+
+
+
+        <br/>
+
+    </form>
